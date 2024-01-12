@@ -10,11 +10,14 @@ export default {
         "gray-100":"#D9D9D9",
         "primary-100":"#89B101",
         "Primary-200":"#739500",
+        "primary-300" : "#05AF2B",
         "secondary-100": "#8DB600",
         "secondary-200": "#739500",
         "secondary-300": "rgba(16,16,16,0.5)",
         "gray-200": "#121701",
-        "gray-300": "#000000"
+        "gray-300": "#000000",
+        "gray-400": "#606060",
+        "gray-500": "#ACACAC"
       },
       // backgroundImage: (theme) => ({
       //   "gradient-color":"linear-gradient(90deg, #8DB600 100%, #739500 100%)",
