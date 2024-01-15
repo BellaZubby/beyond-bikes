@@ -1,5 +1,3 @@
-import TopBar from "@/components/home/topbar";
-import Navbar from "./components/home/topbar/menu";
 import HeroSection from "./components/hero";
 import Trending from "./components/trending";
 import Product from "./components/products";
@@ -7,7 +5,9 @@ import Sponsors from "./components/sponsors";
 import Riding from "./components/riding";
 import Delivery from "./components/delivery";
 import Discount from "./components/discount";
-// import Mobile from "./components/trending/mobile";
+import Bar from "./components/Bar";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -15,16 +15,16 @@ function App() {
   return (
     <>
      <div className='app'>
-      <TopBar/>
-      <Navbar/>
+      <Bar/>
       <HeroSection/>
       <Trending/>
-      {/* <Mobile/> */}
       <Product/>
       <Sponsors/>
       <Riding/>
       <Delivery/>
       <Discount/>
+      <Contact/>
+      <Footer/>
      </div>
     </>
   )

@@ -17,7 +17,10 @@ export default {
         "gray-200": "#121701",
         "gray-300": "#000000",
         "gray-400": "#606060",
-        "gray-500": "#ACACAC"
+        "gray-500": "#ACACAC",
+        "gray-600": "#F1F1F1",
+        "tertiary-100":"#303030",
+        "tertiary-200": " #111111"
       },
       // backgroundImage: (theme) => ({
       //   "gradient-color":"linear-gradient(90deg, #8DB600 100%, #739500 100%)",
@@ -29,6 +32,8 @@ export default {
 
     },
     screens: {
+      xxxs: "200px",
+      xxs: "350px",
       xs: "480px",
       sm: "768px",
       md: "1060px"

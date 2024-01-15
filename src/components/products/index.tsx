@@ -64,7 +64,7 @@ const Product = (props: Props) => {
             <div className="w-8 h-[0.5px] bg-gradient-to-r from-secondary-100 to-secondary-200"></div>
         </div>
         {/* next section */}
-        <div className='flex items-center justify-center gap-12 text-[16px] mt-6'>
+        <div className='flex items-center justify-center gap-12 text-[16px] mt-6 ml-5 mr-4'>
             <button className='bg-secondary-100 hover:secondary-100 p-2 hover:text-white'>
                 Just Added
             </button>
