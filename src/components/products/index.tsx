@@ -59,13 +59,13 @@ const Product = () => {
         </div>
         {/* next section */}
         <div className='flex items-center justify-center gap-6 text-[16px] mt-6 main py-6 sm:gap-9'>
-            <button className='active:bg-secondary-100 hover:bg-secondary-100 p-2 hover:text-white'>
+            <button className='font-semibold border-none active:bg-secondary-100 hover:bg-secondary-100 p-2 hover:text-white'>
                 Just Added
             </button>
-            <button className='hover:bg-secondary-100 p-2 hover:text-white active:bg-secondary-100'>
+            <button className='font-semibold border-none hover:bg-secondary-100 p-2 hover:text-white active:bg-secondary-100'>
                 Popular
             </button>
-            <button className='hover:bg-secondary-100 p-2 hover:text-white active:bg-secondary-100'>
+            <button className='font-semibold border-none hover:bg-secondary-100 p-2 hover:text-white active:bg-secondary-100'>
                 Special
             </button>
         </div>

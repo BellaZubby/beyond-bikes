@@ -9,7 +9,7 @@ import "./hero.css";
 const HeroSection = () => {
   return (
     <section>
-        <div className='hero bg-[url("@/assets/hero-image.png")] bg-center bg-cover h-[450px] w-full relative text-white mt-16 md:mt-28'>
+        <div className='border-none hero bg-[url("@/assets/hero-image.png")] bg-center bg-cover h-[450px] w-full relative text-white mt-16 md:mt-28'>
             <div className=' behind-main w-full h-[450px] bg-secondary-300'>
                 <div className='py-28 w-[80%] pl-9 md:w-[50%] md:pl-32'>
                     <h1 className=' text-[28px] md:text-[55px] font-bold title'>NEWBIES FROM </h1>
