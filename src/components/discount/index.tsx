@@ -8,7 +8,7 @@ import './discount.css'
 const Discount = () => {
   return (
     <section>
-        <div className='flex flex-col sm:flex-row items-center justify-center gap-16 mt-16 w-5/6 mx-auto'>
+        <div className='flex flex-col sm:flex-row items-center justify-center gap-9 sm:gap-16 mt-16 w-5/6 mx-auto'>
             {/* left */}
             <div className='px-12 h-52 md:px-3 md:py-1 flex items-center justify-center bg-gradient-to-l from-secondary-100 to-secondary-200 md:w-[33%] w-full'>
                 <div>
