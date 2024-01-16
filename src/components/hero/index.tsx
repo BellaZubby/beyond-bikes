@@ -1,12 +1,12 @@
 import ActionBtn from '@/shared/ActionBtn'
 import "./hero.css";
-import React from 'react'
+
 
 // import heroImage from "@/assets/hero-image.png";
 
-type Props = {}
 
-const HeroSection = (props: Props) => {
+
+const HeroSection = () => {
   return (
     <section>
         <div className='hero bg-[url("@/assets/hero-image.png")] bg-center bg-cover h-[450px] w-full relative text-white mt-16 md:mt-28'>

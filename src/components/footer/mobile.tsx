@@ -7,9 +7,7 @@ import Product from './product'
 import FooterContact from './footerContact'
 import Socials from './socials'
 
-type Props = {}
-
-const Mobile = (props: Props) => {
+const Mobile = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   return (

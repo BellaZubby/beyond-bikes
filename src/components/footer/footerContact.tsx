@@ -3,9 +3,8 @@ import { ChevronDownIcon, MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons
 import useMediaQuery from '@/Hooks/useMediaQuery'
 
 
-type Props = {}
 
-const FooterContact = (props: Props) => {
+const FooterContact = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   return (

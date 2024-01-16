@@ -5,9 +5,9 @@ import gmail from "@/assets/gmail.svg"
 import youtube from "@/assets/youtube.svg"
 import pinterest from "@/assets/pinterest.svg"
 
-type Props = {}
 
-const Socials = (props: Props) => {
+
+const Socials = () => {
   return (
     <div>
         <div className='bg-black text-gray-500 w-full'>

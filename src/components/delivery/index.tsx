@@ -1,8 +1,8 @@
 import { TruckIcon, ArrowPathIcon, GiftIcon, CreditCardIcon} from '@heroicons/react/16/solid'
 import "./delivery.css"
-type Props = {}
 
-const Delivery = (props: Props) => {
+
+const Delivery = () => {
   return (
     <section>
         <div className='flex flex-col md:flex-row items-center justify-center gap-16 mt-16'>

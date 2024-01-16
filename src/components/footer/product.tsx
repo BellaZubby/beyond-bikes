@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import useMediaQuery from '@/Hooks/useMediaQuery'
 
-type Props = {}
 
-const Product = (props: Props) => {
+
+const Product = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   return (

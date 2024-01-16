@@ -5,9 +5,8 @@ import bgImg2 from "@/assets/bike-helmet.png"
 import bgImg3 from "@/assets/city-bike.png"
 import ActionBtn from '@/shared/ActionBtn';
 
-type Props = {}
 
-const Carousel = (props: Props) => {
+const Carousel = () => {
     const settings = {
         dots: true,
         infinite: true,

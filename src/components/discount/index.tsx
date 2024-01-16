@@ -1,12 +1,11 @@
-import React from 'react'
 import img1 from '@/assets/brushes.png'
 import ActionBtn from '@/shared/ActionBtn'
 import './discount.css'
 
 
-type Props = {}
 
-const Discount = (props: Props) => {
+
+const Discount = () => {
   return (
     <section>
         <div className='flex flex-col sm:flex-row items-center justify-center gap-16 mt-16 w-5/6 mx-auto'>

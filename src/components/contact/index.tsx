@@ -1,9 +1,9 @@
 import "./contact.css"
 
 
-type Props = {}
 
-const Contact = (props: Props) => {
+
+const Contact = () => {
   return (
     <div>
         {/* outer div with bg */}

@@ -9,9 +9,9 @@ import xmark from "@/assets/xmark.svg";
 import logo from "@/assets/bblogo.png";
 import './Bar.css'
 
-type Props = {}
 
-const Bar = (props: Props) => {
+
+const Bar = () => {
     const flexBetween ="flex items-center justify-between";
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")

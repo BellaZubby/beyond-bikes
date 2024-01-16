@@ -13,9 +13,9 @@ import "./footer.css"
 
 
 
-type Props = {}
 
-const Footer = (props: Props) => {
+
+const Footer = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width:768px)")
   return (
     <section>

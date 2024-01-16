@@ -1,4 +1,3 @@
-import React from 'react'
 import bicycleIcon from '@/assets/bicycle-icon.svg'
 import './product.css'
 import Bicycle from './Bicycle'
@@ -44,9 +43,9 @@ const items: Array<BicycleType> = [
     
 ];
 
-type Props = {}
 
-const Product = (props: Props) => {
+
+const Product = () => {
   return (
     <div>
         <div className="flex flex-col items-center justify-between mt-12">
