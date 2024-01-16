@@ -5,6 +5,7 @@ import bgImg3 from "@/assets/city-bike.png"
 import Trends from "./trends"
 import { TrendType } from "@/shared/types"
 import Carousel from "./carousel";
+import './trending.css'
 
 
 
@@ -27,7 +28,7 @@ const Trending = () => {
     //  const isAboveMediumScreens = useMediaQuery('(min-width:1000px)')
  return (
     <div>
-        <div className="flex flex-col items-center justify-between">
+        <div className="flex flex-col items-center justify-between trending">
             <div>
                 <img src={bicycleIcon} alt='bicycleIcon' className="w-6 mb-3"/>
             </div>
@@ -48,7 +49,7 @@ const Trending = () => {
        </div> 
        {/* mobile carousel */}
        <div className="w-5/6 mx-auto">
-       <Carousel/>
+        <Carousel/>
        </div>
     </div>
   )

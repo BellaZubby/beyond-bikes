@@ -10,7 +10,7 @@ const Riding = () => {
         <div className='relative text-white bg-cover w-full sm:w-5/6 mx-auto mt-16'
         style={{backgroundImage: `url(${img1})`}}>
             <div className='angle bg-gradient-to-l from-secondary-300 to-gray-200 md:w-[700px]'>
-                <div className='py-28 ml-12 w-[80%] md:w-[50%]'>
+                <div className='py-28 pl-16 w-[80%] md:w-[50%]'>
                     <h1 className='mb-6 text-2xl font-bold'>ELECTRIC BIKE GUIDE</h1>
                     <p className='mb-6 font-thin text-sm'>How to book your FREE test ride</p>
                     <ActionBtn>VIEW MORE</ActionBtn>

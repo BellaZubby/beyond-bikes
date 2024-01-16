@@ -7,5 +7,4 @@ export interface BicycleType {
   image: string;
   name: string;
   price: number;
-  index: number;
 }

@@ -7,6 +7,7 @@ import bars from "@/assets/bars.svg";
 import Logo from "@/assets/mobile-logo.png";
 import xmark from "@/assets/xmark.svg";
 import logo from "@/assets/bblogo.png";
+import './Bar.css'
 
 type Props = {}
 
@@ -15,7 +16,8 @@ const Bar = (props: Props) => {
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
   return (
-    <nav>
+    <>
+    <nav className="bar">
         {isAboveMediumScreens ? (
 
             <div className="fixed top-0 w-full z-[100]">
@@ -44,7 +46,7 @@ const Bar = (props: Props) => {
                 <div className={`${flexBetween} bg-white w-full px-16 h-16`}>
                     {/* left for navbar */}
                     <div>
-                        <img src= {logo} alt="desktop-logo" className="w-38"/>
+                        <a href='#'><img src= {logo} alt="desktop-logo" className="w-38"/></a>
                     </div>
                     {/* right for navbar */}
                     <div className="text-sm flex items-center justify-center gap-6">
@@ -111,6 +113,7 @@ const Bar = (props: Props) => {
             </div>
         )}
     </nav>
+    </>
   )
 }
 

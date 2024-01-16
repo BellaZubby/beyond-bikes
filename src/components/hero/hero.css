@@ -1,4 +1,14 @@
-.main:before {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.title {
+    font-family: "Roboto Condensed", sans-serif;
+}
+.paragraph {
+    font-family: "Roboto", sans-serif;
+}
+
+.hero:before {
     content: "";
     position: absolute;
     left: 0;
@@ -9,7 +19,7 @@
     clip-path: polygon(100% 50%, 0 100%, 100% 100%);
     
 }
-.behind-main:before {
+.behind-hero:before {
     content: "";
     position: absolute;
     left: 0;
