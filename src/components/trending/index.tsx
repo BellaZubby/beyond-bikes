@@ -38,7 +38,7 @@ const Trending = () => {
             <div className="w-8 h-[0.5px] bg-gradient-to-r from-secondary-100 to-secondary-200"></div>
         </div>
 
-    <div className=" w-5/6 mx-auto flex items-center justify-center gap-3 my-6 hidden md:flex">
+    <div className=" w-5/6 mx-auto items-center justify-center gap-3 my-6 hidden md:flex">
        {items.map((item: TrendType) => (
         <Trends
             key={item.title}
