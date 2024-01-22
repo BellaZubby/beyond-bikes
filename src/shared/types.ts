@@ -8,3 +8,7 @@ export interface BicycleType {
   name: string;
   price: number;
 }
+
+export interface onClickType {
+  onClick?():(event: React.MouseEvent<HTMLButtonElement>) => void;
+}

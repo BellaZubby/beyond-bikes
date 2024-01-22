@@ -1,10 +1,30 @@
+import React from 'react';
 import Slider from 'react-slick';
 import "./slick.css"; 
 import "./slick-theme.css";
 import bgImg2 from "@/assets/bike-helmet.png"
 import bgImg3 from "@/assets/city-bike.png"
 import ActionBtn from '@/shared/ActionBtn';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
+import { onClickType } from '@/shared/types';
+import './trending.css'
 
+// interface onClickType {
+//     onClick:(event: React.MouseEvent<HTMLButtonElement>) => void;
+//   }
+// leftarrow
+const PrevArrow: React.FC<onClickType> = ({onClick}) => {   return (     
+    <div 
+    className="slick-arrow slick-prev prevarrow"
+    onClick={onClick}  
+    style={{ left: '-20px', zIndex: 1 }} > <ChevronLeftIcon/>
+    </div>   ); };
+
+//  for nextArrow
+const NextArrow: React.FC<onClickType> = ({onClick}) => {   return (     <div       
+    className="slick-arrow slick-next nextarrow"           
+    onClick={onClick}
+    style={{ right: '-20px', zIndex: 1 }} >  <ChevronRightIcon/> </div>   ); };
 
 const Carousel = () => {
     const settings = {
@@ -12,8 +32,15 @@ const Carousel = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: <PrevArrow />,     
+        nextArrow: <NextArrow />,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        cssEase: 'linear'
       };
+
+
   return (
     <div>
          <Slider {...settings} className='md:hidden sm:block mt-6'>

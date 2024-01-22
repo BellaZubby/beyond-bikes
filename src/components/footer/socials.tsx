@@ -23,6 +23,7 @@ const Socials = () => {
                         <img src={gmail} alt='gmail'/>
                         <img src={youtube} alt='youtube'/>
                         <img src={pinterest} alt='pinterest'/>
+                        <a href='#' className="text-white"><img src={facebook}/></a>
                     </div>
                 </div>
             </div>
