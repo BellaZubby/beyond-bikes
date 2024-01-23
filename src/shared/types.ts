@@ -12,3 +12,7 @@ export interface BicycleType {
 export interface onClickType {
   onClick?():(event: React.MouseEvent<HTMLButtonElement>) => void;
 }
+
+export interface heroslideType {
+  bgImg: string;
+}

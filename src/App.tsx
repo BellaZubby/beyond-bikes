@@ -1,4 +1,3 @@
-import HeroSection from "./components/hero";
 import Trending from "./components/trending";
 import Product from "./components/products";
 import Sponsors from "./components/sponsors";
@@ -8,6 +7,7 @@ import Discount from "./components/discount";
 import Bar from "./components/Bar";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import Heroslide from "./components/heroslide";
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
     <>
      <div className='app'>
       <Bar/>
-      <HeroSection/>
+      <Heroslide/>
+      {/* <HeroSection/> */}
       <Trending/>
       <Product/>
       <Sponsors/>
