@@ -60,7 +60,7 @@ const Heroslide = () => {
                             {
                                 imageSlide.map((_imageSlide, currentState) => (
         
-                                <span key={currentState} onClick={()=> goToNext(currentState)} className='mt-16 w-[10px] h-[10px] bg-[#D9D9D9] ml-6 rounded-full cursor-pointer hover:bg-slate-700 active:bg-slate-700 md:w-[15px] md:h-[15px] md:mt-5'></span>
+                                <span key={currentState} onClick={()=> goToNext(currentState)} className='dots mt-16 w-[10px] h-[10px] bg-[#D9D9D9] ml-6 rounded-full cursor-pointer hover:bg-slate-700 active:bg-slate-700 md:w-[15px] md:h-[15px] md:mt-5'></span>
                                 ))
                             }
                             </div>
