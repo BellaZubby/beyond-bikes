@@ -7,6 +7,8 @@ export interface BicycleType {
   image: string;
   name: string;
   price: number;
+  carousel?: JSX.Element;
+  tag?: string;
 }
 
 export interface onClickType {
@@ -15,4 +17,15 @@ export interface onClickType {
 
 export interface heroslideType {
   bgImg: string;
+}
+export interface productCarouselType {
+  bgColor: string;
+}
+export interface sponsorLogoType {
+  logo: string;
+}
+export interface deliveryType {
+  icon: string;
+  title: string;
+  subtitle: string
 }

@@ -5,6 +5,9 @@ import { BicycleType } from '@/shared/types'
 import img1 from '@/assets/stump-jumper.png'
 import img2 from '@/assets/roubaix-comp.png'
 import ActionBtn from '@/shared/ActionBtn'
+import ProductCarousel from './productCarousel'
+import newTag from '@/assets/new.svg'
+import sale from '@/assets/sale.svg'
 
 
 const items: Array<BicycleType> = [
@@ -12,32 +15,39 @@ const items: Array<BicycleType> = [
         image: img1,
         name: 'Stumpjumper Alloy',
         price: 1899.00,
+        carousel: <ProductCarousel bgColor={''}/>,
+        tag: newTag
     },
     {
         image: img2,
         name: 'Roubaix Comp-SRAM Rival',
         price: 5000.00,
-
+        carousel: <ProductCarousel bgColor={''}/>,
+        tag: newTag
     },
     {
         image: img2,
         name: 'Roubaix Comp-SRAM Rival',
         price: 5000.00,
+        tag: sale
     },
     {
         image: img1,
         name: 'Stumpjumper Alloy',
         price: 1899.00,
+        tag: newTag
     },
     {
         image: img2,
         name: 'Roubaix Comp-SRAM Rival',
         price: 5000.00,
+        carousel: <ProductCarousel bgColor={''}/>
     },
     {
         image: img2,
         name: 'Roubaix Comp-SRAM Rival',
         price: 5000.00,
+        tag: sale
     },
 
     
@@ -70,12 +80,14 @@ const Product = () => {
             </button>
         </div>
         {/* bicycle gallery */}
-        <div className=" w-5/6 mx-auto grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2">
+        <div className="w-5/6 mx-auto grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2">
             {items.map((item: BicycleType) => (
             <Bicycle
             image={item.image}
             name={item.name}
             price={item.price}
+            carousel={item.carousel}
+            tag={item.tag}
         />
        ))}
        </div> 

@@ -9,7 +9,10 @@ import { ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/16/solid'
 
 
 
+
+
 const Sponsors = () => {
+    
   return (
     <section>
         <div className='flex items-center justify-center w-5/6 mx-auto gap-6 mt-16'>

@@ -1,4 +1,4 @@
-import logo from "@/assets/bblogo.png";
+import logo from "@/assets/whiteLogo.png";
 import facebook from "@/assets/facebook.svg"
 import twitter from "@/assets/twitter.svg"
 import instagram from "@/assets/instagram.svg"
@@ -25,7 +25,7 @@ const Footer = () => {
             <div className='w-5/6 mx-auto flex text-gray-500 gap-16'>
                 {/* section one */}
                 <div className="basis-1/6 text-xs">
-                    <img src= {logo} alt="desktop-logo" className="w-38 bg-gray-600 p-2 rounded mb-12"/>
+                    <img src= {logo} alt="desktop-logo" className="w-38 p-2 rounded mb-12"/>
                     <span className='flex items-center justify-center gap-1 mb-5 footer-second font-semibold'><MapPinIcon className='w-6'/> Chromiun Co, 25 Silicon Road, London D04 89GR</span>
                     <div className='flex items-center mb-6 gap-1'>
                        <div><PhoneIcon className='w-4'/></div>

@@ -8,3 +8,14 @@
 .two {
     font-family: "Roboto", sans-serif;
 }
+.active {
+    background-color: transparent;
+    padding:3px;
+    border: 1px solid #8DB600;
+    border-radius: 50%;
+    width: 20px;
+}
+.dot {
+    width: 18px;
+
+}

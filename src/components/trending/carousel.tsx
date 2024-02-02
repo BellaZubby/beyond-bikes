@@ -1,7 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
 import "./slick.css"; 
-import "./slick-theme.css";
+import './Prev-Next.css'
+// import "./slick-theme.css";
 import bgImg2 from "@/assets/bike-helmet.png"
 import bgImg3 from "@/assets/city-bike.png"
 import ActionBtn from '@/shared/ActionBtn';
@@ -14,13 +15,13 @@ import './trending.css'
 // leftarrow
 const PrevArrow: React.FC<onClickType> = ({onClick}) => {   return (     
     <div 
-    className="slick-arrow slick-prev prevarrow"
+    className="slick-arrow slick-Prev prevarrow"
     onClick={onClick}>
     </div>   ); };
 
 //  for nextArrow
 const NextArrow: React.FC<onClickType> = ({onClick}) => {   return (     <div       
-    className="slick-arrow slick-next nextarrow"           
+    className="slick-arrow slick-Next nextarrow"           
     onClick={onClick}></div>   ); };
 
 const Carousel = () => {

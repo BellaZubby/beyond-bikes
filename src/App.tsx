@@ -1,6 +1,6 @@
 import Trending from "./components/trending";
 import Product from "./components/products";
-import Sponsors from "./components/sponsors";
+// import Sponsors from "./components/sponsors";
 import Riding from "./components/riding";
 import Delivery from "./components/delivery";
 import Discount from "./components/discount";
@@ -8,6 +8,7 @@ import Bar from "./components/Bar";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Heroslide from "./components/heroslide";
+import SponsorSlide from "./components/SponsorsSlider/sponsorSlide";
 
 
 function App() {
@@ -17,12 +18,12 @@ function App() {
      <div className='app'>
       <Bar/>
       <Heroslide/>
-      {/* <HeroSection/> */}
       <Trending/>
       <Product/>
-      <Sponsors/>
+      {/* <Sponsors/> */}
+      <SponsorSlide/> 
       <Riding/>
-      <Delivery/>
+      <Delivery icon={""} title={""} subtitle={""}/>
       <Discount/>
       <Contact/>
       <Footer/>

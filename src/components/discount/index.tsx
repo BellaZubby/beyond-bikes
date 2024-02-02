@@ -8,10 +8,10 @@ import './discount.css'
 const Discount = () => {
   return (
     <section>
-        <div className='flex flex-col sm:flex-row items-center justify-center gap-9 sm:gap-16 mt-16 w-5/6 mx-auto'>
+        <div className='flex flex-col sm:flex-row items-center justify-center gap-9 sm:gap-16 mt-9 md:mt-16 w-5/6 mx-auto'>
             {/* left */}
             <div className='px-12 h-52 md:px-3 md:py-1 flex items-center justify-center bg-gradient-to-l from-secondary-100 to-secondary-200 md:w-[33%] w-full'>
-                <div>
+                <div className='w-[50%] md:pl-6 xxs:pl-2'>
                     <h1 className=' text-white mb-2 xxxs:w-[80px] xxs:w-28 discount_first'>MAKE HER SHINE</h1>
                     <p className='text-xs text-white mb-6 discount_second'>Complete Clean Kit</p>
                     <button  className='bg-black md:px-2 md:py-2 p-2 text-white text-[10px] md:text-sm discount_first'>SHOP NOW</button>
