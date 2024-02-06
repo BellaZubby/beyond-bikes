@@ -8,7 +8,7 @@ import ActionBtn from '@/shared/ActionBtn'
 const Riding = () => {
   return (
     <section>
-        <div className='relative text-white bg-cover w-full sm:w-[90%] mx-auto mt-16'
+        <div className='relative text-white bg-cover w-full sm:w-[90%] mx-auto mt-14'
         style={{backgroundImage: `url(${img1})`}}>
            {/* <img src={angle} className='absolute bottom-[-1px] w-[730px]'/>  */}
             <div className='angle bg-gradient-to-l from-secondary-300 to-gray-200 md:w-[750px]'>

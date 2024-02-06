@@ -6,8 +6,10 @@ import img1 from '@/assets/stump-jumper.png'
 import img2 from '@/assets/roubaix-comp.png'
 import ActionBtn from '@/shared/ActionBtn'
 import ProductCarousel from './productCarousel'
-import newTag from '@/assets/new.svg'
-import sale from '@/assets/sale.svg'
+// import newTag from '@/assets/new.svg'
+// import sale from '@/assets/sale.svg'
+import NewBadge from './NewBadge'
+import SalesBadge from './SalesBadge'
 
 
 const items: Array<BicycleType> = [
@@ -16,26 +18,26 @@ const items: Array<BicycleType> = [
         name: 'Stumpjumper Alloy',
         price: 1899.00,
         carousel: <ProductCarousel bgColor={''}/>,
-        tag: newTag
+        tag: <NewBadge/>,
     },
     {
         image: img2,
         name: 'Roubaix Comp-SRAM Rival',
         price: 5000.00,
         carousel: <ProductCarousel bgColor={''}/>,
-        tag: newTag
+        tag: <NewBadge/>
     },
     {
         image: img2,
         name: 'Roubaix Comp-SRAM Rival',
         price: 5000.00,
-        tag: sale
+        saleTag: <SalesBadge/>
     },
     {
         image: img1,
         name: 'Stumpjumper Alloy',
         price: 1899.00,
-        tag: newTag
+        tag: <NewBadge/>
     },
     {
         image: img2,
@@ -47,7 +49,7 @@ const items: Array<BicycleType> = [
         image: img2,
         name: 'Roubaix Comp-SRAM Rival',
         price: 5000.00,
-        tag: sale
+        saleTag: <SalesBadge/>
     },
 
     
@@ -81,13 +83,15 @@ const Product = () => {
         </div>
         {/* bicycle gallery */}
         <div className="w-5/6 mx-auto grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2">
-            {items.map((item: BicycleType) => (
+            {items.map((item: BicycleType, i) => (
             <Bicycle
+            key={i}
             image={item.image}
             name={item.name}
             price={item.price}
             carousel={item.carousel}
             tag={item.tag}
+            saleTag={item.saleTag}
         />
        ))}
        </div> 

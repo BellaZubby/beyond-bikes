@@ -1,6 +1,6 @@
 import Trending from "./components/trending";
 import Product from "./components/products";
-// import Sponsors from "./components/sponsors";
+// npmm import Sponsors from "./components/sponsors";
 import Riding from "./components/riding";
 import Delivery from "./components/delivery";
 import Discount from "./components/discount";

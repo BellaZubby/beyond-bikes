@@ -8,7 +8,8 @@ export interface BicycleType {
   name: string;
   price: number;
   carousel?: JSX.Element;
-  tag?: string;
+  tag?: JSX.Element;
+  saleTag?:JSX.Element
 }
 
 export interface onClickType {
