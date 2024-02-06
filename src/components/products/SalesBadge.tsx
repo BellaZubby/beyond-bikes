@@ -1,9 +1,5 @@
-import React from 'react'
 import './product.css'
-
-type Props = {}
-
-const SalesBadge = (props: Props) => {
+const SalesBadge = () => {
   return (
     <>
     <div className ='badge flex bg-[#111111] w-[130px] h-[24px] absolute top-0 left-0'>

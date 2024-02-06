@@ -1,9 +1,7 @@
-import React from 'react'
 import './product.css'
 
-type Props = {}
 
-const NewBadge = (props: Props) => {
+const NewBadge = () => {
   return (
     <>
     <div className ='badge bg-[#EE6400] w-[50px] h-[24px] absolute top-0 left-0'>

@@ -1,6 +1,3 @@
-import NewBadge from "./NewBadge";
-import SalesBadge from "./SalesBadge";
-
 
 type Props = {
   image: string;
