@@ -5,6 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .medium-clip-path {
+    clip-path:polygon(0 0, 100% 0, 58% 100%, 0 100%) ;
+  }
+
+  .mobile-clip-path{
+    clip-path:polygon(0 0, 100% 0, 54% 100%, 0 100%) 
+  }
+}
+
 html,
 body,
 #root,

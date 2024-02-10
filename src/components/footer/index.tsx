@@ -1,10 +1,10 @@
 import logo from "@/assets/whiteLogo.png";
-import facebook from "@/assets/facebook.svg"
-import twitter from "@/assets/twitter.svg"
-import instagram from "@/assets/instagram.svg"
-import gmail from "@/assets/gmail.svg"
-import youtube from "@/assets/youtube.svg"
-import pinterest from "@/assets/pinterest.svg"
+import facebook from "@/assets/footerFacebook.svg"
+import twitter from "@/assets/footerTwitter.svg"
+import instagram from "@/assets/footerInstagram.svg"
+import gmail from "@/assets/footerGoogle.svg"
+import youtube from "@/assets/footerYoutube.svg"
+import pinterest from "@/assets/footerPinterest.svg"
 import payment from "@/assets/payment_methods 1.png"
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/16/solid';
 import useMediaQuery from "@/Hooks/useMediaQuery";
@@ -56,7 +56,7 @@ const Footer = () => {
                 {/* section four */}
                 <div className="basis-1/6 mt-12">
                     <h1 className="text-sm font-bold mb-4 text-white footer-first">JOIN US</h1>
-                    <div className="flex items-center justify-center gap-4 w-3">
+                    <div className="flex items-center justify-center gap-4 w-6">
                         <img src={facebook} alt='facebook'/>
                         <img src={twitter} alt='twitter'/>
                         <img src={instagram} alt='instagram'/>

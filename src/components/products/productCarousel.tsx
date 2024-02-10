@@ -48,8 +48,9 @@ const ProductCarousel = ({}:Props) => {
     <div className='flex items-center justify-center gap-1'>
         <span className='w-5 text-[#606060]'><ChevronLeftIcon key={currentState} onClick={()=> goToPrev()}/></span>
             {datas.map((data: productCarouselType, index) => (
-        <div className=''>
-            <img src={data.bgColor} 
+        <div key={index}>
+            <img 
+            src={data.bgColor} 
             className={currentState === index + 1 ? "active" : "dot"}
             />
         </div>

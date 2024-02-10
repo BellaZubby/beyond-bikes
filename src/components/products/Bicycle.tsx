@@ -20,7 +20,7 @@ const Bicycle= ({image, name, price,carousel,tag,saleTag} : Props) => {
             <p className='font-bold mt-2 main'>{name}</p>
             <h4 className='text-[10px] text-primary-300 mt-2 main'>IN STOCK</h4>
             <p className='text-sm text-secondary-200 mt-2 two font-semibold'>£{price}</p>
-            <p className="mt-3">{carousel}</p>
+            <div className="mt-3">{carousel}</div>
           </div>
         </div>
       </div>

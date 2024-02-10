@@ -41,11 +41,11 @@ const items: Array<deliveryType>= [
 const Delivery = ({}: Props) => {
   return (
     <section>
-        <div className='flex flex-col md:flex-row items-center justify-center my-9'>
+        <div className='flex flex-col md:flex-row items-center justify-center my-16'>
             {items.map((item: deliveryType, i) => (
-                <div className='flex flex-col md:flex-row items-center justify-center gap-16 md:mt-9'>
+                <div key={i} className='flex flex-col md:flex-row items-center justify-center gap-16 md:mt-9'>
                     <div className='flex flex-col md:flex-row items-center justify-center gap-3'>
-                        <img key={i} src={item.icon} className='text-secondary-100 w-9'/>
+                        <img src={item.icon} className='text-secondary-100 w-9'/>
                         <div className='flex flex-col items-center justify-center sm:block'>
                             <h1 className='text-gray-400 text-sm font-bold first'>{item.title}</h1>
                             <p className='text-gray-500 text-xs second'>{item.subtitle}</p>

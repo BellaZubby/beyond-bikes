@@ -25,7 +25,7 @@ const Bar = () => {
                 {/* topmost bar */}
                     <div className={`${flexBetween} w-full bg-primary-100 h-12 px-16`}>
                     {/* left */}
-                        <div className="flex items-center justify-center gap-1 text-[10px] text-white font-light">
+                        <div className="flex items-center justify-center gap-1 text-[10px] text-white font-[500]">
                             <a href="">WELCOME</a>
                             <div className="bg-white w-[1px] h-[10px]"></div>
                             <a href="">REGISTER</a>

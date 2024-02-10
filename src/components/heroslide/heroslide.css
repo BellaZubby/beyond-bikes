@@ -33,4 +33,12 @@
     width: 100%;
     background-color: white;
     clip-path: polygon(100% 50%, 0 100%, 100% 100%);
+    
 }
+.current {
+    content: url(@/assets/Group.svg);
+}
+.non-current {
+    content: url(@/assets/Ellipse.svg);
+}
+/* mt-16 w-[10px] h-[10px] text-[40px] text-primary-100 ml-6 cursor-pointer md:w-[15px] md:h-[15px] md:mt-5 */

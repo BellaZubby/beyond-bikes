@@ -29,14 +29,15 @@ export default {
       fontFamily: {
         robotoCondensed:["Roboto Condensed", "sans-serif"]
       },
+        Roboto: ["Roboto", "sans-serif"]
 
     },
     screens: {
-      xxxs: "200px",
-      xxs: "350px",
+      '3xs': "200px",
+      '2xs': "350px",
       xs: "480px",
       sm: "768px",
-      md: "1060px"
+      md: "1060px",
     }
   },
   plugins: [],

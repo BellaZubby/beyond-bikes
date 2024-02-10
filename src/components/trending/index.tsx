@@ -39,9 +39,9 @@ const Trending = () => {
         </div>
 
     <div className=" w-5/6 mx-auto items-center justify-center gap-3 my-6 hidden md:flex">
-       {items.map((item: TrendType) => (
+       {items.map((item: TrendType, i) => (
         <Trends
-            key={item.title}
+            key={i}
             bgImg={item.bgImg}
             title={item.title}
         />

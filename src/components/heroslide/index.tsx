@@ -23,27 +23,26 @@ const Heroslide = () => {
     
     const[currentState, setCurrentState] =useState(0)
 
-    useEffect(()=>{
-        const timer = setTimeout(()=>{
-            if(currentState===2) {
-                setCurrentState(0)
+     useEffect(()=>{
+         const timer = setTimeout(()=>{
+             if(currentState===2) {
+                 setCurrentState(0)
             }else {
-                setCurrentState(currentState+1)
-            }
+                 setCurrentState(currentState+1)
+             }
 
-        }, 3000)
+         }, 3000)
         
-        return ()=> clearTimeout(timer)
-    }, [currentState])
+         return ()=> clearTimeout(timer)
+     }, [currentState])
 
     const bgImageStyle = {
         backgroundImage:`url(${imageSlide[currentState].bgImg})`,
         backgroundPosition:'center',
         backgroundSize: 'cover',
     }
-
-    const goToNext = (currentState: React.SetStateAction<number>)=> {
-        setCurrentState(currentState)
+    const moveDot = (index: React.SetStateAction<number>) => {
+        setCurrentState(index)
     }
  return (
     <>
@@ -56,11 +55,10 @@ const Heroslide = () => {
                         <p className='mb-5 text-[10px] md:text-[12px] font-light md:w-[280px] paragraph'>Looking for a bicycle that's custom made for your needs, hi-tech, and long-lasting?</p>
                         <ActionBtn>VIEW THE RANGE</ActionBtn>
                     
-                            <div className='absolute xxs:left-28 flex items-center justify-center md:flex-col md:left-[1100px] md:bottom-[250px] sm:left-72'>
+                            <div className='absolute 2xs:left-28 flex items-center justify-center md:flex-col md:left-[1100px] md:bottom-[250px] sm:left-72'>
                             {
-                                imageSlide.map((_imageSlide, currentState) => (
-        
-                                <span key={currentState} onClick={()=> goToNext(currentState)}  className=' mt-16 w-[10px] h-[10px] bg-[#D9D9D9] ml-6 rounded-full cursor-pointer md:w-[15px] md:h-[15px] md:mt-5'></span>
+                                imageSlide.map((_item, index) => (
+                                <span key={index} onClick={() => {moveDot(index)}} className={currentState === index ? 'current mt-16 w-5 h-5 text-[40px] ml-6 cursor-pointer md:w-[20px] md:h-[20px] md:mt-5': 'non-current mt-16 w-[10px] h-[10px] text-[40px] ml-6 cursor-pointer md:w-[15px] md:h-[15px] md:mt-5' }></span>
                                 ))
                             }
                             </div>

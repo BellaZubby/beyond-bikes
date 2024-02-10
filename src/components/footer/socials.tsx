@@ -1,9 +1,9 @@
-import facebook from "@/assets/facebook.svg"
-import twitter from "@/assets/twitter.svg"
-import instagram from "@/assets/instagram.svg"
-import gmail from "@/assets/gmail.svg"
-import youtube from "@/assets/youtube.svg"
-import pinterest from "@/assets/pinterest.svg"
+import facebook from "@/assets/footerFacebook.svg"
+import twitter from "@/assets/footerTwitter.svg"
+import instagram from "@/assets/footerInstagram.svg"
+import gmail from "@/assets/footerGoogle.svg"
+import youtube from "@/assets/footerYoutube.svg"
+import pinterest from "@/assets/footerPinterest.svg"
 
 
 
