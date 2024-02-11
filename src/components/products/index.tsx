@@ -6,8 +6,6 @@ import img1 from '@/assets/stump-jumper.png'
 import img2 from '@/assets/roubaix-comp.png'
 import ActionBtn from '@/shared/ActionBtn'
 import ProductCarousel from './productCarousel'
-// import newTag from '@/assets/new.svg'
-// import sale from '@/assets/sale.svg'
 import NewBadge from './NewBadge'
 import SalesBadge from './SalesBadge'
 
@@ -65,19 +63,19 @@ const Product = () => {
                 <img src={bicycleIcon} alt='bicycleIcon' className="w-6 mb-3"/>
             </div>
             <div>
-                <h1 className="font-bold text-xl product">OUR PRODUCTS</h1>
+                <h1 className="font-bold text-xl font-robotoCondensed">OUR PRODUCTS</h1>
             </div>
             <div className="w-8 h-[0.5px] bg-gradient-to-r from-secondary-100 to-secondary-200"></div>
         </div>
         {/* next section */}
-        <div className='flex items-center justify-center gap-6 text-[16px] mt-6 main py-6 sm:gap-9'>
-            <button className='font-semibold border-none active:bg-secondary-100 hover:bg-secondary-100 p-2 hover:text-white'>
+        <div className='flex items-center justify-center gap-6 text-[16px] mt-6 py-6 sm:gap-9'>
+            <button className='w-28 font-semibold border-none active:bg-secondary-100 hover:bg-secondary-100 p-2 hover:text-white'>
                 Just Added
             </button>
-            <button className='font-semibold border-none hover:bg-secondary-100 p-2 hover:text-white active:bg-secondary-100'>
+            <button className='w-28 font-semibold border-none hover:bg-secondary-100 p-2 hover:text-white active:bg-secondary-100'>
                 Popular
             </button>
-            <button className='font-semibold border-none hover:bg-secondary-100 p-2 hover:text-white active:bg-secondary-100'>
+            <button className='w-28 font-semibold border-none hover:bg-secondary-100 p-2 hover:text-white active:bg-secondary-100'>
                 Special
             </button>
         </div>

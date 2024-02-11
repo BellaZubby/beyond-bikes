@@ -50,9 +50,9 @@ const Heroslide = () => {
                 {/* others */}
                 <div className='behind-hero w-full h-[490px] bg-secondary-300'>
                     <div className='py-28 w-[80%] md:w-[50%] pl-9 md:pl-32'>
-                        <h1 className=' text-[28px] md:text-[55px] font-bold title'>NEWBIES FROM </h1>
-                        <h1 className='text-[28px] md:text-[55px] font-bold title'>TREK & SPECIALIZED</h1>
-                        <p className='mb-5 text-[10px] md:text-[12px] font-light md:w-[280px] paragraph'>Looking for a bicycle that's custom made for your needs, hi-tech, and long-lasting?</p>
+                        <h1 className=' text-[28px] md:text-[55px] font-bold font-robotoCondensed'>NEWBIES FROM </h1>
+                        <h1 className='text-[28px] md:text-[55px] font-bold font-robotoCondensed'>TREK & SPECIALIZED</h1>
+                        <p className='mb-5 text-[10px] md:text-[12px] font-light md:w-[280px] font-Roboto'>Looking for a bicycle that's custom made for your needs, hi-tech, and long-lasting?</p>
                         <ActionBtn>VIEW THE RANGE</ActionBtn>
                     
                             <div className='absolute 2xs:left-28 flex items-center justify-center md:flex-col md:left-[1100px] md:bottom-[250px] sm:left-72'>

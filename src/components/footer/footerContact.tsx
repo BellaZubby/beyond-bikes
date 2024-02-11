@@ -28,14 +28,14 @@ const FooterContact = () => {
                 {/* menu items on mobile */}
                 <div className= 'flex flex-col gap-2 text-sm text-gray-500 w-[180px] ml-5'>
                              {/* menu list */}
-                             <span className='flex items-center gap-1 mt-4'><MapPinIcon className='w-6 footer-second font-semibold'/> Chromium Co, 25 Silicon Road, London D04 89GR</span>
+                             <span className='flex items-center gap-1 mt-4'><MapPinIcon className='w-6 font-Roboto font-semibold'/> Chromium Co, 25 Silicon Road, London D04 89GR</span>
                     <div className='flex items-center gap-1'>
                        <div><PhoneIcon className='w-4'/></div>
-                       <div><p className="text-white footer-second font-semibold">+27 34 66 2455-198</p>
-                        <p className='footer-second font-semibold'>Mon - Fri 8:00 to 19:00</p>
+                       <div><p className="text-white font-Roboto font-semibold">+27 34 66 2455-198</p>
+                        <p className='font-Roboto font-semibold'>Mon - Fri 8:00 to 19:00</p>
                         </div>
                     </div>
-                    <span className='flex items-center gap-1 footer-second font-semibold'><EnvelopeIcon className='w-4'/>example@example.com</span>
+                    <span className='flex items-center gap-1 font-Roboto font-semibold'><EnvelopeIcon className='w-4'/>example@example.com</span>
                 </div>
             </div>
         )}

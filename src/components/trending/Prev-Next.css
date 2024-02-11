@@ -69,21 +69,14 @@
     font-family: 'slick';
     font-size: 25px;
     line-height: 1;
-    background-color: #c8c9cb;
-    padding: 7px;
-    clip-path: circle();
-    opacity: .75;
     font-weight: 400;
-    color: #89B101;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-Prev
 {
-    left: -20px;
-    margin-left: -10px;
+    left: -25px ;
     z-index: 1;
 }
 /* [dir='rtl'] .slick-prev
@@ -94,7 +87,7 @@
 .slick-Prev:before
 {
     /* content: '←'; */
-    content: '<';
+    content: url(@/assets/Prevbtn.svg);
 }
 [dir='rtl'] .slick-Prev:before
 {
@@ -103,8 +96,7 @@
 
 .slick-Next
 {
-    right: -20px;
-    margin-right: -2px;
+    right:-3px;
     z-index: 1;
 }
 /* [dir='rtl'] .slick-next
@@ -115,7 +107,7 @@
 .slick-Next:before
 {
     /* content: '→'; */
-    content: '>'
+    content: url(@/assets/Nextbtn.svg)
 }
 [dir='rtl'] .slick-Next:before
 {

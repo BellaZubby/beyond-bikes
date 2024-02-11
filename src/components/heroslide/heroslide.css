@@ -1,18 +1,3 @@
-/* .container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-} */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-.title {
-    font-family: "Roboto Condensed", sans-serif;
-}
-.paragraph {
-    font-family: "Roboto", sans-serif;
-}
-
 .hero:before {
     content: "";
     position: absolute;
@@ -41,4 +26,3 @@
 .non-current {
     content: url(@/assets/Ellipse.svg);
 }
-/* mt-16 w-[10px] h-[10px] text-[40px] text-primary-100 ml-6 cursor-pointer md:w-[15px] md:h-[15px] md:mt-5 */

@@ -7,7 +7,7 @@ import bgImg2 from "@/assets/bike-helmet.png"
 import bgImg3 from "@/assets/city-bike.png"
 import ActionBtn from '@/shared/ActionBtn';
 import { onClickType } from '@/shared/types';
-import './trending.css'
+
 
 // interface onClickType {
 //     onClick:(event: React.MouseEvent<HTMLButtonElement>) => void;

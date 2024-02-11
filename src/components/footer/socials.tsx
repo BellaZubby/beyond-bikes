@@ -14,7 +14,7 @@ const Socials = () => {
             {/* company dropdown */}
             <div className='w-5/6 mx-auto pt-6'>
                 <div className='flex flex-col'>
-                    <h1 className='text-sm text-white footer-first'>JOIN US</h1>
+                    <h1 className='text-sm text-white font-robotoCondensed'>JOIN US</h1>
                     {/* SOCIAL ICONS */}
                     <div className="flex mt-6 gap-4 w-6">
                         <img src={facebook} alt='facebook'/>
@@ -23,7 +23,6 @@ const Socials = () => {
                         <img src={gmail} alt='gmail'/>
                         <img src={youtube} alt='youtube'/>
                         <img src={pinterest} alt='pinterest'/>
-                        <a href='#' className="text-white"><img src={facebook}/></a>
                     </div>
                 </div>
             </div>

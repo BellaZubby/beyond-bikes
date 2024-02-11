@@ -7,7 +7,6 @@ import bars from "@/assets/bars.svg";
 import Logo from "@/assets/mobile-logo.png";
 import xmark from "@/assets/xmark.svg";
 import logo from "@/assets/bblogo.png";
-import './Bar.css'
 
 
 
@@ -17,7 +16,7 @@ const Bar = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
   return (
     <>
-    <nav className="bar">
+    <nav className="font-robotoCondensed">
         {isAboveMediumScreens ? (
 
             <div className="fixed top-0 w-full z-[100]">

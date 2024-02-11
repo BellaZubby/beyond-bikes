@@ -27,9 +27,10 @@ export default {
       //   "mobile-home":"url('./assets/hero-image.png')"
       // }),
       fontFamily: {
-        robotoCondensed:["Roboto Condensed", "sans-serif"]
-      },
+        robotoCondensed:["Roboto Condensed", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"]
+      },
+        
 
     },
     screens: {
