@@ -2,16 +2,12 @@ import React from 'react';
 import Slider from 'react-slick';
 import "./slick.css"; 
 import './Prev-Next.css'
-// import "./slick-theme.css";
 import bgImg2 from "@/assets/bike-helmet.png"
 import bgImg3 from "@/assets/city-bike.png"
 import ActionBtn from '@/shared/ActionBtn';
 import { onClickType } from '@/shared/types';
 
 
-// interface onClickType {
-//     onClick:(event: React.MouseEvent<HTMLButtonElement>) => void;
-//   }
 // leftarrow
 const PrevArrow: React.FC<onClickType> = ({onClick}) => {   return (     
     <div 

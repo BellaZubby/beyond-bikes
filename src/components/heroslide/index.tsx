@@ -55,13 +55,13 @@ const Heroslide = () => {
                         <p className='mb-5 text-[10px] md:text-[12px] font-light md:w-[280px] font-Roboto'>Looking for a bicycle that's custom made for your needs, hi-tech, and long-lasting?</p>
                         <ActionBtn>VIEW THE RANGE</ActionBtn>
                     
-                            <div className='absolute 2xs:left-28 flex items-center justify-center md:flex-col md:left-[1100px] md:bottom-[250px] sm:left-72'>
+                        <div className='absolute 2xs:left-28 flex items-center justify-center md:flex-col md:left-[1100px] md:bottom-[250px] sm:left-72'>
                             {
                                 imageSlide.map((_item, index) => (
-                                <span key={index} onClick={() => {moveDot(index)}} className={currentState === index ? 'current mt-16 w-5 h-5 text-[40px] ml-6 cursor-pointer md:w-[20px] md:h-[20px] md:mt-5': 'non-current mt-16 w-[10px] h-[10px] text-[40px] ml-6 cursor-pointer md:w-[15px] md:h-[15px] md:mt-5' }></span>
+                                    <span key={index} onClick={() => {moveDot(index)}} className={currentState === index ? 'current mt-16 w-5 h-5 text-[40px] ml-6 cursor-pointer md:w-[20px] md:h-[20px] md:mt-5': 'non-current mt-16 w-[10px] h-[10px] text-[40px] ml-6 cursor-pointer md:w-[15px] md:h-[15px] md:mt-5' }></span>
                                 ))
                             }
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

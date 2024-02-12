@@ -16,74 +16,75 @@ const Bar = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
   return (
     <>
-    <nav className="font-robotoCondensed">
-        {isAboveMediumScreens ? (
+        <nav className="font-robotoCondensed">
+            {isAboveMediumScreens ? (
 
-            <div className="fixed top-0 w-full z-[100]">
-                <div>
-                {/* topmost bar */}
-                    <div className={`${flexBetween} w-full bg-primary-100 h-12 px-16`}>
+                <div className="fixed top-0 w-full z-[100]">
+                    <div>
+                    {/* topmost bar */}
+                        <div className={`${flexBetween} w-full bg-primary-100 h-12 px-16`}>
                     {/* left */}
-                        <div className="flex items-center justify-center gap-1 text-[10px] text-white font-[500]">
-                            <a href="">WELCOME</a>
-                            <div className="bg-white w-[1px] h-[10px]"></div>
-                            <a href="">REGISTER</a>
-                            <div className="bg-white w-[0.5px] h-[10px]"></div>
-                            <a href="">LOGIN</a>
-                    </div>
+                            <div className="flex items-center justify-center gap-1 text-[10px] text-white font-[500]">
+                                <a href="">WELCOME</a>
+                                <div className="bg-white w-[1px] h-[10px]"></div>
+                                <a href="">REGISTER</a>
+                                <div className="bg-white w-[0.5px] h-[10px]"></div>
+                                <a href="">LOGIN</a>
+                            </div>
                     {/* right */}
-                    <div className="flex items-center justify-center gap-5">
-                        <img src={searchIcon} alt="search-icon" className="w-3"/>
-                        <img src={heartIcon} alt="heart-icon" className="w-3"/>
-                        <div className={`${flexBetween} gap-1 text-[10px] font-light text-white`}> 
-                            <img src={shoppingIcon} alt="shopping-cart" className="w-3"/>
-                            <p className="mt-1">SHOPPING CART</p>
+                            <div className="flex items-center justify-center gap-5">
+                                <img src={searchIcon} alt="search-icon" className="w-3"/>
+                                <img src={heartIcon} alt="heart-icon" className="w-3"/>
+                                <div className={`${flexBetween} gap-1 text-[10px] font-light text-white`}> 
+                                    <img src={shoppingIcon} alt="shopping-cart" className="w-3"/>
+                                    <p className="mt-1">SHOPPING CART</p>
+                                </div>
+                            </div>
+                        </div>
+                {/* Navbar */}
+                        <div className={`${flexBetween} bg-white w-full px-16 h-16`}>
+                    {/* left for navbar */}
+                            <div>
+                                <a href='#'><img src= {logo} alt="desktop-logo" className="w-38"/></a>
+                            </div>
+                    {/* right for navbar */}
+                            <div className="text-sm flex items-center justify-center gap-6">
+                                <a href="" className=" hover:text-primary-100">BIKES</a>
+                                <a href="" className=" hover:text-primary-100">CLOTHING</a>
+                                <a href="" className=" hover:text-primary-100">HELMETS</a>
+                                <a href="" className=" hover:text-primary-100">ACCESSORIES</a>
+                                <a href="" className=" hover:text-primary-100">COMPONENTS</a>
+                                <a href="" className=" hover:text-primary-100">SALE</a>
+                                <a href="" className=" hover:text-primary-100">BRANDS</a>
+                                <a href="" className=" hover:text-primary-100">SCOOTERS</a>
+                                <a href="" className=" hover:text-primary-100">CYCLE SCHEMES</a>
+                                <a href="" className=" hover:text-primary-100">SERVICES</a>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            ) : (
+            // mobile
+                <div className=' bg-black fixed top-0 z-[100] w-full py-6'>
+                    <div className='w-5/6 mx-auto flex items-center justify-between'>
+                {/* bar and logo */}
+                        <div className="flex items-center gap-4">
+                            <button 
+                                className=""
+                                onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                                <img src={bars} alt="bars-icon" className="text-white h-8 w-8"/>
+                            </button>
+                            <img src ={Logo} alt="logo" className="h-6 w-10"/>
+                        </div>
+                {/* icons */}
+                        <div className="flex items-center justify-center gap-6">
+                            <img src={searchIcon} alt="search-icon" className="w-3"/>
+                            <img src={heartIcon} alt="heart-icon" className="w-3"/>
+                            <img src={shoppingIcon} alt="shopping-cart" className="w-3"/>  
                         </div>
                     </div>
                 </div>
-                {/* Navbar */}
-                <div className={`${flexBetween} bg-white w-full px-16 h-16`}>
-                    {/* left for navbar */}
-                    <div>
-                        <a href='#'><img src= {logo} alt="desktop-logo" className="w-38"/></a>
-                    </div>
-                    {/* right for navbar */}
-                    <div className="text-sm flex items-center justify-center gap-6">
-                    <a href="" className=" hover:text-primary-100">BIKES</a>
-                        <a href="" className=" hover:text-primary-100">CLOTHING</a>
-                        <a href="" className=" hover:text-primary-100">HELMETS</a>
-                        <a href="" className=" hover:text-primary-100">ACCESSORIES</a>
-                        <a href="" className=" hover:text-primary-100">COMPONENTS</a>
-                        <a href="" className=" hover:text-primary-100">SALE</a>
-                        <a href="" className=" hover:text-primary-100">BRANDS</a>
-                        <a href="" className=" hover:text-primary-100">SCOOTERS</a>
-                        <a href="" className=" hover:text-primary-100">CYCLE SCHEMES</a>
-                        <a href="" className=" hover:text-primary-100">SERVICES</a>
-                    </div>
-                </div>
-            </div>
-        </div>) : (
-            // mobile
-            <div className=' bg-black fixed top-0 z-[100] w-full py-6'>
-            <div className='w-5/6 mx-auto flex items-center justify-between'>
-                {/* bar and logo */}
-                <div className="flex items-center gap-4">
-                <button 
-                className=""
-                onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                    <img src={bars} alt="bars-icon" className="text-white h-8 w-8"/>
-                </button>
-                <img src ={Logo} alt="logo" className="h-6 w-10"/>
-                </div>
-                {/* icons */}
-                <div className="flex items-center justify-center gap-6">
-                    <img src={searchIcon} alt="search-icon" className="w-3"/>
-                    <img src={heartIcon} alt="heart-icon" className="w-3"/>
-                    <img src={shoppingIcon} alt="shopping-cart" className="w-3"/>  
-                </div>
-            </div>
-        </div>
-        )
+            )
         }
 
         {/* for dropdown menu on mobile */}
@@ -111,7 +112,7 @@ const Bar = () => {
                 </div>
             </div>
         )}
-    </nav>
+        </nav>
     </>
   )
 }

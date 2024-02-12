@@ -71,7 +71,8 @@ const Footer = () => {
                     <p className="font-Roboto">© 2023 Powered by <a href='https://push.bike/' target="_blank" className='text-primary-100'>PushRetail</a>. All Rights Reserved</p>
                     <img src={payment} alt='payment-method'/>
                 </div>
-        </div>) : (
+        </div>
+        ) : (
             <Mobile/>
         )}
     </section>
