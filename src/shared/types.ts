@@ -1,7 +1,7 @@
 export interface TrendType {
-    bgImg: string;
-    title: string;
-  }
+  bgImg: string;
+  title: string;
+}
 
 export interface BicycleType {
   image: string;
@@ -9,11 +9,11 @@ export interface BicycleType {
   price: number;
   carousel?: JSX.Element;
   tag?: JSX.Element;
-  saleTag?:JSX.Element
+  saleTag?: JSX.Element
 }
 
 export interface onClickType {
-  onClick?():(event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?(): (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export interface heroslideType {

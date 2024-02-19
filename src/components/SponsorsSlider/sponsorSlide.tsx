@@ -10,7 +10,6 @@ import './sponsorSlickTheme.css'
 import { sponsorLogoType } from '@/shared/types';
 import './sponsorSlide.css'
 
-
 type Props = {}
 const sponsorLogo: Array<sponsorLogoType> = [
   {
@@ -39,29 +38,30 @@ const sponsorLogo: Array<sponsorLogoType> = [
   }
 ]
 
-const SponsorSlide = ({}: Props) => {
+const SponsorSlide = ({ }: Props) => {
   const settings = {
     className: "center",
     infinite: true,
     centerPadding: "60px",
     slidesToShow: 7,
     swipeToSlide: true,
-    afterChange: function(index: number) {
+    afterChange: function (index: number) {
       console.log(
         `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
       );
     }
   };
+
   return (
     <section className='w-full'>
-    <div className='flex items-center justify-center mt-16'>
+      <div className='flex items-center justify-center mt-16'>
         <Slider {...settings} className='w-[700px]'>
-             {sponsorLogo.map((item:sponsorLogoType, i)=> ( 
-                 <img key={i} src={item.logo} alt='image'/>
-             ))}
+          {sponsorLogo.map((item: sponsorLogoType, i) => (
+            <img key={i} src={item.logo} alt='image' />
+          ))}
         </Slider>
-    </div>
-</section>
+      </div>
+    </section>
   )
 }
 

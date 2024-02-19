@@ -6,12 +6,6 @@ import Trends from "./trends"
 import { TrendType } from "@/shared/types"
 import Carousel from "./carousel";
 
-
-
-
-
-
-
 const items: Array<TrendType> = [
     {
         bgImg: bgImg1,
@@ -28,34 +22,33 @@ const items: Array<TrendType> = [
 ];
 
 const Trending = () => {
-    
- return (
-    <div>
-        <div className="flex flex-col items-center justify-between font-robotoCondensed">
-            <div>
-                <img src={bicycleIcon} alt='bicycleIcon' className="w-6 mb-3"/>
-            </div>
-            <div>
-                <h1 className="font-bold text-xl">TRENDING CATEGORIES</h1>
-            </div>
-            <div className="w-8 h-[0.5px] bg-gradient-to-r from-secondary-100 to-secondary-200"></div>
-        </div>
 
-        <div className=" w-5/6 mx-auto items-center justify-center gap-3 my-6 hidden md:flex">
-            {items.map((item: TrendType, i) => (
-                <Trends
-                    key={i}
-                    bgImg={item.bgImg}
-                    title={item.title}
-                />
-            ))}
-        </div> 
-       {/* mobile carousel */}
-        <div className="w-5/6 mx-auto">
-            <Carousel/>
+    return (
+        <div>
+            <div className="flex flex-col items-center justify-between font-robotoCondensed">
+                <div>
+                    <img src={bicycleIcon} alt='bicycleIcon' className="w-6 mb-3" />
+                </div>
+                <div>
+                    <h1 className="font-bold text-xl">TRENDING CATEGORIES</h1>
+                </div>
+                <div className="w-8 h-[0.5px] bg-gradient-to-r from-secondary-100 to-secondary-200"></div>
+            </div>
+            <div className=" w-5/6 mx-auto items-center justify-center gap-3 my-6 hidden md:flex">
+                {items.map((item: TrendType, i) => (
+                    <Trends
+                        key={i}
+                        bgImg={item.bgImg}
+                        title={item.title}
+                    />
+                ))}
+            </div>
+            {/* mobile carousel */}
+            <div className="w-5/6 mx-auto">
+                <Carousel />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Trending

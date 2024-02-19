@@ -9,24 +9,21 @@ import Heroslide from "./components/heroslide";
 import SponsorSlide from "./components/SponsorsSlider/sponsorSlide";
 import OverlayRiding from "./components/Overlay/Riding";
 
-
-
 function App() {
-
   return (
     <>
-     <div className='app'>
-      <Bar/>
-      <Heroslide/>
-      <Trending/>
-      <Product/>
-      <SponsorSlide/> 
-      <OverlayRiding/>
-      <Delivery icon={""} title={""} subtitle={""}/>
-      <Discount/>
-      <Contact/>
-      <Footer/>
-     </div>
+      <div className='app'>
+        <Bar />
+        <Heroslide />
+        <Trending />
+        <Product />
+        <SponsorSlide />
+        <OverlayRiding />
+        <Delivery icon={""} title={""} subtitle={""} />
+        <Discount />
+        <Contact />
+        <Footer />
+      </div>
     </>
   )
 }

@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 
-
 // setting up responsiveness
 const useMediaQuery = (query: string) => {
 
     const [matches, setMatches] = useState(false);
-
     useEffect(
         () => {
             const media = window.matchMedia(query);
@@ -17,7 +15,7 @@ const useMediaQuery = (query: string) => {
             return () => window.removeEventListener("resize", listener);
         }, [matches, query]
     );
-  return matches;
+    return matches;
 };
 
 export default useMediaQuery;
